@@ -24,7 +24,7 @@ try:
 except ImportError:
     print("cryptography is NOT installed.")
 
-# Fernet encryption key (in real apps, store securely!)
+# Fernet encryption key
 fernet_key = Fernet.generate_key()
 fernet = Fernet(fernet_key)
 
